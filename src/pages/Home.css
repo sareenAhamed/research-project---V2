@@ -1,0 +1,211 @@
+/* Home page container */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0073e6;
+  margin-bottom: 12px;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  padding: 12px 24px;
+  background-color: #0073e6;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 500;
+  /* transition: background-color 0.3s ease; */
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+
+/* Hero Wrapper */
+.hero-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+/* Background Image */
+.hero-background {
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/images/inscription-bg.png'); /* your image path */
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  opacity: 0.75;
+  transform: scale(1.05); /* Prevent blur edge clipping */
+  z-index: 1;
+}
+
+/* Overlay for readability */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 2;
+}
+
+/* Foreground content */
+.hero-section {
+  position: relative;
+  z-index: 3;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+/* Make hero section look premium */
+.hero-text h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0d2b45;
+  margin-bottom: 16px;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+
+
+.home-section {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.home-section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.cta-btn {
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+/* Home Sections (Why, How, Impact) */
+.home-section {
+  background-color: #f5f5f5;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.home-section h2 {
+  color: #0073e6;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.home-section p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Alternate background for sections */
+.home-section.alternate {
+  background-color: #e9f0ff;
+}
+
+
+/* Button Container */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Base Button */
+.cta-btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Primary Button */
+.primary-btn {
+  background-color: #0073e6;
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background-color: #005bb5;
+  transform: translateY(-3px);
+}
+
+/* Secondary Button */
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #0073e6;
+  color: #0073e6;
+}
+
+.secondary-btn:hover {
+  background-color: #0073e6;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

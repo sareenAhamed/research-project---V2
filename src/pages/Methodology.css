@@ -1,0 +1,83 @@
+/* Methodology page container */
+.methodology-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.methodology-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+/* Cards layout */
+.methodology-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+/* Individual card */
+.methodology-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.methodology-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.methodology-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.methodology-step-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0073e6;
+  margin-bottom: 12px;
+}
+
+.methodology-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+/* Highlight Expert Validation Step */
+.expert-step {
+  border-left: 4px solid #0073e6;
+  background-color: #f0f6ff;
+}
+
+.expert-step h3 {
+  color: #0d2b45;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .methodology-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .methodology-card {
+    width: 100%;
+  }
+}

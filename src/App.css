@@ -1,0 +1,56 @@
+/* Main layout adjustments */
+main {
+  padding-top: 80px; /* Space for fixed header */
+  min-height: calc(100vh - 140px); /* Adjust for footer height */
+  background-color: #fafafa;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+/* Optional default font for the entire app */
+body, main, header, footer {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Global link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive adjustments for main content */
+@media (max-width: 900px) {
+  main {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-top: 60px;
+  }
+}

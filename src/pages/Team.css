@@ -1,0 +1,83 @@
+/* Team page container */
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  
+  /* Stacks children vertically */
+  display: flex;
+  flex-direction: column;
+  /* Centers children horizontally */
+  align-items: center; 
+  /* Adds spacing between the stacked items */
+  gap: 30px; 
+}
+
+.team-container img {
+  max-width: 100%;
+  height: auto;
+  /* Ensures images don't stretch past their original size */
+  display: block;
+}
+
+.team-container .content-block {
+  max-width: 800px; /* Limits text width for better readability */
+}
+
+.team-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+/* Supervisor section */
+/* .supervisor-section {
+  margin-bottom: 10px;
+} */
+
+.supervisor-section img{
+  display: block;
+  margin: 0 auto;          /* Extra safety for image centering */
+  max-width: 100%;         /* Ensures responsiveness */
+  height: auto;
+}
+
+/* Team members grid */
+.members-section {
+  margin-top: 20px;
+  
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;
+}
+
+.team-grid img {
+  display: block;
+  margin: 0 auto;          /* Extra safety for image centering */
+  max-width: 100%;         /* Ensures responsiveness */
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

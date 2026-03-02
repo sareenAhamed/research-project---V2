@@ -1,0 +1,66 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set global font and smooth text */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fafafa;
+  scroll-behavior: smooth;
+}
+
+/* Links global style */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Main content spacing */
+main {
+  padding-top: 60px; /* Ensure content is below fixed header if header is fixed */
+  min-height: calc(100vh - 140px); /* Adjust for footer height */
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Buttons global style */
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Text alignment utilities */
+.text-center {
+  text-align: center;
+}
+
+/* Margin/padding utilities */
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Optional: smooth hover transition for interactive elements */
+button, a {
+  transition: all 0.3s ease;
+}
