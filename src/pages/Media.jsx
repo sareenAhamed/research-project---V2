@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Media.css';
+import demoVideo from '../assets/video/gan.mp4';
 
 const mediaItems = [
-  { type: 'video', src: '/assets/videos/demo1.mp4', caption: 'Restoration Demo 1' },
-  { type: 'video', src: '/assets/videos/demo2.mp4', caption: 'Recognition Demo 2' },
-  { type: 'image', src: '/assets/images/media1.jpg', caption: 'Sample Input vs Output 1' },
-  { type: 'image', src: '/assets/images/media2.jpg', caption: 'Sample Input vs Output 2' },
+  { type: 'video', src: demoVideo, caption: 'Demo' },
+  // { type: 'image', src: '/assets/images/media1.jpg', caption: 'Sample Input vs Output 1' },
+  // { type: 'image', src: '/assets/images/media2.jpg', caption: 'Sample Input vs Output 2' },
 ];
 
 const Media = () => {
