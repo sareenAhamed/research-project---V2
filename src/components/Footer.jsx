@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import thesisPDF from '../assets/pdf/thesis.pdf';
+import demoVideo from '../assets/video/gan.mp4';
 
 const Footer = () => {
   return (
@@ -44,6 +45,15 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 Thesis
+              </a>
+            </li>
+              <li>
+              <a 
+                href={demoVideo}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Demo
               </a>
             </li>
           </ul>
