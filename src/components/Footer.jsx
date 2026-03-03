@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import thesisPDF from '../assets/pdf/thesis.pdf';
-import demoVideo from '../assets/video/gan.mp4';
+import demoVideo from '../assets/video/demo.mp4';
 
 const Footer = () => {
   return (

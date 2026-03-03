@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Media.css';
-import demoVideo from '../assets/video/gan.mp4';
+import demoVideo from '../assets/video/demo.mp4';
 
 const mediaItems = [
   { type: 'video', src: demoVideo, caption: 'Demo' },
